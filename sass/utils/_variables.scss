@@ -1,0 +1,32 @@
+/* Прописуємо та задаємо значення для основних кольорів тексту та фону */
+:root {
+    /* text colors */
+    --primary-text-color: #757575;
+    --secondary-text-color: #ffffff;
+    --section-title-text: #212121;
+    /* bg colors */
+    --accent-color: #2196f3;
+    --primary-bg-color: #ffffff;
+    --section-bg-color: #f5f4fa;
+    --hero-footer-bg-color: #2f303a;
+    --work-img-bg-color: rgba(47, 48, 58, 0.8);
+    --cards-overflow-bg-cl: rgba(33, 150, 243, 0.9);
+    --backdrop-modal-bg-cl:rgba(0, 0, 0, 0.2);
+    /* forms label cl */
+    --forms-lbl-cl: #757575;
+    /* hover, focus colors */
+    --hero-btn-hover-color: #188ce8;
+    /* lines colors*/
+    --header-line-cl: #ececec;
+    /* borders colors*/
+    --cards-border-cl: #eeeeee;
+    /* team social icons */
+    --team-social-icons: #afb1b8;
+    /* transition */
+    --transition-time-hover: 250ms;
+    --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    /* others */
+    --items: 3;
+    --indent: 30px;
+  }
+

@@ -1,0 +1,22 @@
+/* Прописуємо box-sizing для всього документу*/
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+/* Задаємо основні кольори,шрифт та розмір для документа
+ !!! - не впливає на button,addres */
+
+ body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }

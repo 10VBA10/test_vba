@@ -1,0 +1,206 @@
+/* ---FOOTER---*/
+
+.footer {
+    @extend %section;
+    background-color: var(--hero-footer-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+.footer-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+}  
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .addres{
+    margin-top: 20px;
+  }
+  .footer-logo-addres {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      // margin-right: 70px;
+      text-align: left;
+    }
+  }
+
+  /* contacts */
+  
+  .addres-map {
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+    transition: color var(--transition-time-hover) var(--transition-cubic);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+  }
+  .footer-contacts {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .footer-text {
+    margin-bottom: 20px;
+
+  text-align: center;
+  
+    color: var(--secondary-text-color);
+  
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+  
+  /* social */
+  
+  .footer-social{
+    
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-right: 93px;
+    }
+  }
+  .footer-list{
+    @include list;
+  }
+  .footer-social-list {
+    
+    @include list;
+    display: flex;
+   
+  }
+  .footer-social-link:not(:last-child) {
+    margin-right: 10px;
+  }
+  .footer-social-svg {
+    fill: currentColor;
+  }
+  .footer-social-link {
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--secondary-text-color);
+  
+    transition: background-color var(--transition-time-hover) var(--transition-cubic);
+    
+      &:hover,
+      &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  .footer-social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+ 
+  .mail-subscription-wraper{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+  /* subscription */
+  .footer-subscription{
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
+    
+    
+  }
+  .user-mail-subscription-input{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+    background-color: var(--hero-footer-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      width: 358px;
+    }
+  }
+  .footer-form-subsc{
+
+    display: inline-block;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .user-mail-subscription-input::placeholder {
+  
+  font-size: 16px;
+  line-height: 1,25;
+  
+  color: rgba(255, 255, 255, 0.6);
+  } 
+  
+  

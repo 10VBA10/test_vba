@@ -1,0 +1,104 @@
+/* TEAM */
+
+.team {
+    @extend %section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+    // padding-bottom: 111px;
+    background-color: var(--section-bg-color);
+  }
+  .team__title,
+  .team-title__text {
+    color: var(--section-title-text);
+  }
+  .team__title {
+    margin-bottom: 50px;
+  
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+      
+    @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    }
+  }
+  .team__list {
+
+    --items: 1;
+        
+    @media screen and (min-width: 768px) {
+        --items: 2;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+    text-align: center;
+}
+    
+  .team-social__icons {
+    @include list;
+
+    display: flex;
+    justify-content: center;
+  }
+  .team-social__item {
+    display: block;
+    
+  }
+  .team-social__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .team__svg {
+    fill: currentColor;
+  }
+  .team-social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+  
+    border-radius: 50%;
+    color: var(--team-social-icons);
+  
+    transition: color var(--transition-time-hover) var(--transition-cubic),
+    background-color var(--transition-time-hover) var(--transition-cubic);
+  
+    &:hover,
+    &:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    }
+  }
+  .team__item {
+    background-color: var(--primary-bg-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001f;
+  }
+  .team__sign {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .team-title__text {
+    margin-top: 0;
+    margin-bottom: 10px;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  .team__text {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }

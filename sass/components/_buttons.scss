@@ -1,0 +1,71 @@
+
+  .projects-btn {
+    color: var(--section-title-text);
+    background-color: var(--section-bg-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+  
+    display: inline-block;
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+  
+    transition: color var(--transition-time-hover) var(--transition-cubic),
+    background-color var(--transition-time-hover) var(--transition-cubic), box-shadow var(--transition-time-hover) var(--transition-cubic);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+  .projects-list-btn .projects-btn.current {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+  }
+
+
+
+  .footer-btn-subscription{
+    
+    position: relative;
+    
+    padding-left: 29px;
+    padding-right: 62px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: transparent;
+    
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  
+    transition: background-color var(--transition-time-hover) var(--transition-cubic);
+
+      &:hover,
+      &:focus {
+    background-color: var(--hero-btn-hover-color);
+    }
+  }
+  
+  .icon-send{
+    position: absolute;
+    top:50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+  
+  }
